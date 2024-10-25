@@ -4,6 +4,13 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
+const cors = require('cors');
+app.use(cors({
+    origin: 'https://myed-landing-page-avfe3nyln-arnav-guptas-projects-bb2cc629.vercel.app/',
+    credentials: true
+}));
+
+
 
 const app = express();
 app.use(cors());
